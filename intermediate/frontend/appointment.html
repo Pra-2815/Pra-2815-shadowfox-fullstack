@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Fix an Appointment | Sakthi Dental Clinic</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <div class="container nav-container">
+
+            <a href="index.html" class="logo">
+                Sakthi Dental Clinic
+            </a>
+
+            <button
+                type="button"
+                class="menu-toggle"
+                id="menuToggle"
+            >
+                ☰
+            </button>
+
+            <nav
+                class="navbar"
+                id="navbar"
+            >
+
+                <a href="index.html">Home</a>
+
+                <a href="about.html">About</a>
+
+                <a href="treatments.html">Treatments</a>
+
+                <a href="faq.html">FAQ</a>
+
+                <a href="contact.html">Contact</a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ================= APPOINTMENT ================= -->
+
+    <main>
+
+        <section class="contact-section">
+
+            <div class="container">
+
+
+                <!-- TITLE -->
+
+                <div class="section-heading">
+
+                    <h1>
+                        Fix an Appointment
+                    </h1>
+
+                    <p>
+                        Schedule your visit with Sakthi Dental Clinic.
+                    </p>
+
+                </div>
+
+
+
+                <!-- FORM CONTAINER -->
+
+                <div class="contact-form-container">
+
+                    <form
+                        id="appointmentForm"
+                        novalidate
+                    >
+
+
+                        <!-- NAME -->
+
+                        <div class="form-group">
+
+                            <label for="appointmentName">
+                                Name *
+                            </label>
+
+                            <input
+                                type="text"
+                                id="appointmentName"
+                                name="name"
+                                placeholder="Enter your name"
+                            >
+
+                            <small
+                                id="appointmentNameError"
+                            ></small>
+
+                        </div>
+
+
+
+                        <!-- EMAIL -->
+
+                        <div class="form-group">
+
+                            <label for="appointmentEmail">
+                                Email *
+                            </label>
+
+                            <input
+                                type="email"
+                                id="appointmentEmail"
+                                name="email"
+                                placeholder="Enter your email"
+                            >
+
+                            <small
+                                id="appointmentEmailError"
+                            ></small>
+
+                        </div>
+
+
+
+                        <!-- PHONE -->
+
+                        <div class="form-group">
+
+                            <label for="appointmentPhone">
+                                Phone Number *
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="appointmentPhone"
+                                name="phone"
+                                placeholder="Enter your phone number"
+                            >
+
+                            <small
+                                id="appointmentPhoneError"
+                            ></small>
+
+                        </div>
+
+
+
+                        <!-- DATE -->
+
+                        <div class="form-group">
+
+                            <label for="appointmentDate">
+                                Appointment Date *
+                            </label>
+
+                            <input
+                                type="date"
+                                id="appointmentDate"
+                                name="date"
+                            >
+
+                            <small
+                                id="appointmentDateError"
+                            ></small>
+
+                        </div>
+
+
+
+                        <!-- TIME -->
+
+                        <div class="form-group">
+
+                            <label for="appointmentTime">
+                                Appointment Time *
+                            </label>
+
+                            <input
+                                type="time"
+                                id="appointmentTime"
+                                name="time"
+                            >
+
+                            <small
+                                id="appointmentTimeError"
+                            ></small>
+
+                        </div>
+
+
+
+                        <!-- TREATMENT -->
+
+                        <div class="form-group">
+
+                            <label for="appointmentTreatment">
+                                Treatment *
+                            </label>
+
+                            <select
+                                id="appointmentTreatment"
+                                name="treatment"
+                            >
+
+                                <option value="">
+                                    Select a treatment
+                                </option>
+
+                                <option value="Teeth Cleaning & Scaling">
+                                    Teeth Cleaning & Scaling
+                                </option>
+
+                                <option value="Tooth Filling">
+                                    Tooth Filling
+                                </option>
+
+                                <option value="Tooth Extraction">
+                                    Tooth Extraction
+                                </option>
+
+                                <option value="Complete Denture">
+                                    Complete Denture
+                                </option>
+
+                                <option value="Dental Implants">
+                                    Dental Implants
+                                </option>
+
+                                <option value="Laser Dentistry">
+                                    Laser Dentistry
+                                </option>
+
+                                <option value="Root Canal Therapy">
+                                    Root Canal Therapy
+                                </option>
+
+                                <option value="Wisdom Tooth Extraction">
+                                    Wisdom Tooth Extraction
+                                </option>
+
+                                <option value="Fixed Partial Denture">
+                                    Fixed Partial Denture
+                                </option>
+
+                                <option value="Teeth Whitening">
+                                    Teeth Whitening
+                                </option>
+
+                                <option value="Veneers">
+                                    Veneers
+                                </option>
+
+                                <option value="Pediatric Dentistry">
+                                    Pediatric Dentistry
+                                </option>
+
+                                <option value="Flap Surgery">
+                                    Flap Surgery
+                                </option>
+
+                                <option value="Orthodontic Braces">
+                                    Orthodontic Braces
+                                </option>
+
+                                <option value="Clear Aligners">
+                                    Clear Aligners
+                                </option>
+
+                            </select>
+
+                            <small
+                                id="appointmentTreatmentError"
+                            ></small>
+
+                        </div>
+
+
+
+                        <!-- MESSAGE -->
+
+                        <div class="form-group">
+
+                            <label for="appointmentMessage">
+                                Message
+                            </label>
+
+                            <textarea
+                                id="appointmentMessage"
+                                name="message"
+                                rows="6"
+                                placeholder="Write your message..."
+                            ></textarea>
+
+                        </div>
+
+
+
+                        <!-- BOOK APPOINTMENT BUTTON -->
+
+                        <button
+                            type="submit"
+                            class="btn primary-btn submit-btn"
+                        >
+                            Book Appointment
+                        </button>
+
+
+
+                        <!-- SUCCESS MESSAGE -->
+
+                        <div
+                            id="appointmentSuccessMessage"
+                            style="
+                                width: 100%;
+                                min-height: 30px;
+                                margin-top: 20px;
+                                margin-bottom: 10px;
+                                padding: 12px 10px;
+                                box-sizing: border-box;
+                                text-align: center;
+                                font-size: 18px;
+                                font-weight: 600;
+                                color: green;
+                            "
+                        ></div>
+
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
